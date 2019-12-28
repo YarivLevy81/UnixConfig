@@ -34,13 +34,13 @@ function main {
 	fi	
 	cp .vimrc ~/.
     
-    if [-f ~/.bashrc]; then
+    	if [-f ~/.bashrc]; then
 	    mv ~/.bashrc ~/.bashrc.tmp
-    fi
+    	fi
 	cp .bashrc ~/.
 
-    mkdir ~/.vim/colors
-    cp ~/.vim/bundle/gruvbox/colors/gruvbox.vim ~/.vim/colors/
+    	mkdir ~/.vim/colors
+    	cp ~/.vim/bundle/gruvbox/colors/gruvbox.vim ~/.vim/colors/
 }
 
 main "$@"
